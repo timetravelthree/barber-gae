@@ -2,7 +2,8 @@
   "name": "barber-dagae",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tinacms dev -c \"npx serve . -p 3000\"",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev --port 4001 -c \"npx serve . -p 3000\"",
+    "dev:cloud": "tinacms dev --port 4001 -c \"npx serve . -p 3000\"",
     "build": "tinacms build"
   },
   "dependencies": {
