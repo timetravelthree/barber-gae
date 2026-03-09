@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da Gae | Barbiere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 28C12 28 14 20 20 20C26 20 28 28 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="20" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Da Gae</span>
+                    <span class="logo-tagline">Barbiere</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="Apri menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Servizi</a></li>
+                <li><a href="#story" class="nav-link">La Storia</a></li>
+                <li><a href="#gallery" class="nav-link">Lavori</a></li>
+                <li><a href="#contact" class="nav-link">Contatti</a></li>
+                <li><a href="#booking" class="nav-link btn-book">Prenota</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-image">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1920&h=1080&fit=crop" alt="Barberia" loading="eager">
+        </div>
+        <div class="hero-bg-text">BARBIERE</div>
+        <div class="hero-decoration">
+            <div class="scissors-icon">✂</div>
+        </div>
+        <div class="hero-content">
+            <h1>
+                <span class="hero-line-1">Barbiere</span>
+                <span class="hero-line-2">NUMBER ONE</span>
+                <span class="hero-line-3">per un <em>motivo.</em></span>
+            </h1>
+            <p class="hero-desc">Un taglio come si deve, due chiacchiere, e via. Senza fronzoli.</p>
+            <div class="hero-cta">
+                <a href="#booking" class="btn btn-primary">
+                    <span>Prenota il tuo posto</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <span class="section-number">01</span>
+                    <h2>Prenota</h2>
+                    <p class="booking-desc">Prenotazioni online disponibili solo la Domenica. Per gli altri giorni, chiamaci o passa direttamente.</p>
+
+                    <div class="booking-details">
+                        <div class="detail-card">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-content">
+                                <strong>Dove Siamo</strong>
+                                <p>Via Tortona 23<br>20144 Milano</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <div class="detail-icon">🕐</div>
+                            <div class="detail-content">
+                                <strong>Orari</strong>
+                                <p>Mar-Ven: 9:00-20:00<br>Sab: 9:00-18:00<br>Dom-Lun: Riposo</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <div class="detail-icon">📞</div>
+                            <div class="detail-content">
+                                <strong>Chiamaci</strong>
+                                <p><a href="tel:+390212345678">02 1234 5678</a><br>Anche WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="walk-in-notice">
+                        <span class="notice-icon">💡</span>
+                        <p><strong>Passi senza appuntamento?</strong> Nessun problema. Se c'è posto, ti faccio subito.</p>
+                    </div>
+                </div>
+
+                <div class="booking-form-wrapper">
+                    <div class="form-header">
+                        <h3>Prenota Online</h3>
+                        <p>Prenotazioni disponibili solo la Domenica</p>
+                    </div>
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/barber-number-one/20-min?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>★ TAGLIO CLASSICO</span>
+            <span>★ BARBA TRADIZIONALE</span>
+            <span>★ RASATURA A MANO</span>
+            <span>★ TRATTAMENTI VISO</span>
+            <span>★ TAGLIO CLASSICO</span>
+            <span>★ BARBA TRADIZIONALE</span>
+            <span>★ RASATURA A MANO</span>
+            <span>★ TRATTAMENTI VISO</span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">02</span>
+                <h2>Cosa <em>facciamo</em></h2>
+                <p>Tagli, barba, e quello che serve. Prezzi onesti.</p>
+            </div>
+
+            <div class="services-list">
+                <article class="service-item">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3>Taglio</h3>
+                        <p>Taglio classico con forbici o macchinetta. Shampoo incluso.</p>
+                    </div>
+                    <div class="service-meta">
+                        <span class="service-duration">30 min</span>
+                        <span class="service-price">€15</span>
+                    </div>
+                </article>
+
+                <article class="service-item">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3>Barba</h3>
+                        <p>Rifinitura barba con rasoio. Asciugamano caldo incluso.</p>
+                    </div>
+                    <div class="service-meta">
+                        <span class="service-duration">20 min</span>
+                        <span class="service-price">€10</span>
+                    </div>
+                </article>
+
+                <article class="service-item">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3>Taglio + Barba</h3>
+                        <p>Il pacchetto completo. Taglio e barba insieme, risparmi qualcosa.</p>
+                    </div>
+                    <div class="service-meta">
+                        <span class="service-duration">45 min</span>
+                        <span class="service-price">€22</span>
+                    </div>
+                </article>
+
+                <article class="service-item">
+                    <div class="service-number">04</div>
+                    <div class="service-content">
+                        <h3>Rasatura</h3>
+                        <p>Rasatura completa a zero. Per chi vuole ricominciare da capo.</p>
+                    </div>
+                    <div class="service-meta">
+                        <span class="service-duration">20 min</span>
+                        <span class="service-price">€12</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-images">
+                    <div class="story-image main">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=800&fit=crop" alt="Barbiere al lavoro" loading="lazy">
+                    </div>
+                    <div class="story-image secondary">
+                        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=500&h=400&fit=crop" alt="Interno barberia tradizionale" loading="lazy">
+                    </div>
+                    <div class="story-image accent">
+                        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=300&h=250&fit=crop" alt="Strumenti da barbiere vintage" loading="lazy">
+                    </div>
+                </div>
+                <div class="story-content">
+                    <span class="section-number">03</span>
+                    <h2>Chi <em>siamo</em></h2>
+                    <div class="story-text">
+                        <p class="lead">"Ho aperto questo posto perché mi piace il mestiere. Punto."</p>
+                        <p>Niente storie epiche. Solo un barbiere che ha deciso di mettersi in proprio. Un locale piccolo, pulito, dove si lavora bene e si sta tranquilli.</p>
+                        <p>Se cerchi un posto dove farti un taglio senza prenotare mesi prima e senza spendere una fortuna, sei nel posto giusto.</p>
+                    </div>
+                    <div class="story-signature">
+                        <div class="signature-line"></div>
+                        <span>Gae</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Banner -->
+    <section class="philosophy">
+        <div class="container">
+            <blockquote>
+                <span class="quote-mark">"</span>
+                <p>Vieni, siediti, rilassati. Al resto ci penso io.</p>
+                <footer>— Gae</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">04</span>
+                <h2>Qualche <em>esempio</em></h2>
+                <p>Ecco cosa facciamo.</p>
+            </div>
+
+            <div class="gallery-mosaic">
+                <div class="gallery-item size-large">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&h=800&fit=crop" alt="Fade Classico" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Fade Classico</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&h=400&fit=crop" alt="Barba Curata" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Barba Curata</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&h=400&fit=crop" alt="Pompadour" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Pompadour</span>
+                    </div>
+                </div>
+                <div class="gallery-item size-tall">
+                    <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=400&h=800&fit=crop" alt="Rasatura Tradizionale" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Rasatura Tradizionale</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop" alt="Texture Moderna" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Texture Moderna</span>
+                    </div>
+                </div>
+                <div class="gallery-item size-wide">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&h=400&fit=crop" alt="La Bottega" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">La Bottega</span>
+                        <span class="gallery-tag">Via Tortona 23</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact/Map Section -->
+    <section id="contact" class="contact">
+        <div class="map-area">
+            <img src="https://images.unsplash.com/photo-1604902396830-e772c97c3f42?w=1920&h=600&fit=crop" alt="Esterno barberia" class="map-bg-image">
+            <div class="map-overlay">
+                <div class="map-content">
+                    <div class="map-pin">📍</div>
+                    <div class="map-address">
+                        <strong>Da Gae</strong>
+                        <span>Via Tortona 23, Milano</span>
+                    </div>
+                    <a href="https://maps.google.com/?q=Via+Tortona+23+Milano" target="_blank" class="map-link">Apri in Google Maps →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo-name">Da Gae</span>
+                        <span class="footer-logo-sub">Barbiere</span>
+                    </div>
+                    <p class="footer-tagline">Tagli semplici, prezzi onesti.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Orari</h4>
+                        <ul>
+                            <li>Mar-Ven: 9-20</li>
+                            <li>Sabato: 9-18</li>
+                            <li>Dom-Lun: Chiuso</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contatti</h4>
+                        <ul>
+                            <li><a href="tel:+390212345678">02 1234 5678</a></li>
+                            <li><a href="mailto:ciao@dagae.it">ciao@dagae.it</a></li>
+                            <li>Via Tortona 23, Milano</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Da Gae. Fatto con ❤️ a Milano.</p>
+                <p class="footer-credits">Le forbici sono del 1987. Il sito no.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

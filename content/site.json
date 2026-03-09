@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "backgroundImage": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1920&h=1080&fit=crop",
+    "titleLine1": "Barbiere",
+    "titleLine2": "NUMBER ONE",
+    "titleLine3": "per un <em>motivo.</em>",
+    "description": "Un taglio come si deve, due chiacchiere, e via. Senza fronzoli."
+  },
+  "booking": {
+    "description": "Prenotazioni online disponibili solo la Domenica. Per gli altri giorni, chiamaci o passa direttamente.",
+    "address": "Via Tortona 23\n20144 Milano",
+    "hours": ["Mar-Ven: 9:00-20:00", "Sab: 9:00-18:00", "Dom-Lun: Riposo"],
+    "phone": "02 1234 5678",
+    "walkInNotice": "Passi senza appuntamento? Nessun problema. Se c'è posto, ti faccio subito."
+  },
+  "services": [
+    {
+      "name": "Taglio",
+      "description": "Taglio classico con forbici o macchinetta. Shampoo incluso.",
+      "duration": "30 min",
+      "price": "€15"
+    },
+    {
+      "name": "Barba",
+      "description": "Rifinitura barba con rasoio. Asciugamano caldo incluso.",
+      "duration": "20 min",
+      "price": "€10"
+    },
+    {
+      "name": "Taglio + Barba",
+      "description": "Il pacchetto completo. Taglio e barba insieme, risparmi qualcosa.",
+      "duration": "45 min",
+      "price": "€22"
+    },
+    {
+      "name": "Rasatura",
+      "description": "Rasatura completa a zero. Per chi vuole ricominciare da capo.",
+      "duration": "20 min",
+      "price": "€12"
+    }
+  ],
+  "story": {
+    "mainImage": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=800&fit=crop",
+    "secondaryImage": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=500&h=400&fit=crop",
+    "accentImage": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=300&h=250&fit=crop",
+    "quote": "Ho aperto questo posto perché mi piace il mestiere. Punto.",
+    "paragraph1": "Niente storie epiche. Solo un barbiere che ha deciso di mettersi in proprio. Un locale piccolo, pulito, dove si lavora bene e si sta tranquilli.",
+    "paragraph2": "Se cerchi un posto dove farti un taglio senza prenotare mesi prima e senza spendere una fortuna, sei nel posto giusto.",
+    "signature": "Gae"
+  },
+  "philosophy": {
+    "quote": "Vieni, siediti, rilassati. Al resto ci penso io.",
+    "author": "Gae"
+  },
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&h=800&fit=crop",
+      "label": "Fade Classico",
+      "tag": "",
+      "size": "large"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&h=400&fit=crop",
+      "label": "Barba Curata",
+      "tag": "",
+      "size": "normal"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&h=400&fit=crop",
+      "label": "Pompadour",
+      "tag": "",
+      "size": "normal"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=400&h=800&fit=crop",
+      "label": "Rasatura Tradizionale",
+      "tag": "",
+      "size": "tall"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
+      "label": "Texture Moderna",
+      "tag": "",
+      "size": "normal"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&h=400&fit=crop",
+      "label": "La Bottega",
+      "tag": "Via Tortona 23",
+      "size": "wide"
+    }
+  ],
+  "contact": {
+    "backgroundImage": "https://images.unsplash.com/photo-1604902396830-e772c97c3f42?w=1920&h=600&fit=crop",
+    "name": "Da Gae",
+    "address": "Via Tortona 23, Milano",
+    "mapsUrl": "https://maps.google.com/?q=Via+Tortona+23+Milano"
+  },
+  "footer": {
+    "tagline": "Tagli semplici, prezzi onesti.",
+    "phone": "02 1234 5678",
+    "email": "ciao@dagae.it",
+    "address": "Via Tortona 23, Milano"
+  }
+}

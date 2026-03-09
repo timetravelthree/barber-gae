@@ -1,0 +1,14 @@
+{
+  "name": "barber-dagae",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tinacms dev -c \"npx serve . -p 3000\"",
+    "build": "tinacms build"
+  },
+  "dependencies": {
+    "tinacms": "latest"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^2.1.9"
+  }
+}
