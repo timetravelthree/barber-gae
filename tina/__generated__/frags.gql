@@ -1,0 +1,62 @@
+fragment SiteParts on Site {
+  __typename
+  hero {
+    __typename
+    backgroundImage
+    titleLine1
+    titleLine2
+    titleLine3
+    description
+  }
+  booking {
+    __typename
+    description
+    address
+    hours
+    phone
+    walkInNotice
+  }
+  services {
+    __typename
+    name
+    description
+    duration
+    price
+  }
+  story {
+    __typename
+    mainImage
+    secondaryImage
+    accentImage
+    quote
+    paragraph1
+    paragraph2
+    signature
+  }
+  philosophy {
+    __typename
+    quote
+    author
+  }
+  gallery {
+    __typename
+    image
+    label
+    tag
+    size
+  }
+  contact {
+    __typename
+    backgroundImage
+    name
+    address
+    mapsUrl
+  }
+  footer {
+    __typename
+    tagline
+    phone
+    email
+    address
+  }
+}
