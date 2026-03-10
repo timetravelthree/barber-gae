@@ -15,13 +15,53 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ================================
-// Content Loading (TinaCMS)
+// Content Loading (Sanity)
 // ================================
+const SANITY_PROJECT_ID = 'ufce17om'; // replace with your project ID from sanity.io/manage
+const SANITY_DATASET = 'production';
+
 async function initContent() {
     try {
-        const res = await fetch('/content/site.json');
+        const query = `*[_type == "siteSettings" && _id == "siteSettings"][0]{
+            "hero": {
+                "backgroundImage": hero.backgroundImage.asset->url,
+                "titleLine1": hero.titleLine1,
+                "titleLine2": hero.titleLine2,
+                "titleLine3": hero.titleLine3,
+                "description": hero.description
+            },
+            "booking": {
+                "description": booking.description,
+                "address": booking.address,
+                "hours": booking.hours,
+                "phone": booking.phone,
+                "walkInNotice": booking.walkInNotice
+            },
+            "services": services[]{name, description, duration, price},
+            "story": {
+                "mainImage": story.mainImage.asset->url,
+                "secondaryImage": story.secondaryImage.asset->url,
+                "accentImage": story.accentImage.asset->url,
+                "quote": story.quote,
+                "paragraph1": story.paragraph1,
+                "paragraph2": story.paragraph2,
+                "signature": story.signature
+            },
+            "philosophy": {"quote": philosophy.quote, "author": philosophy.author},
+            "gallery": gallery[]{"image": image.asset->url, label, tag, size},
+            "contact": {
+                "backgroundImage": contact.backgroundImage.asset->url,
+                "name": contact.name,
+                "address": contact.address,
+                "mapsUrl": contact.mapsUrl
+            },
+            "footer": {"tagline": footer.tagline, "phone": footer.phone, "email": footer.email, "address": footer.address}
+        }`;
+        const url = `https://${SANITY_PROJECT_ID}.api.sanity.io/v2023-08-01/data/query/${SANITY_DATASET}?query=${encodeURIComponent(query)}`;
+        const res = await fetch(url);
         if (!res.ok) return;
-        const data = await res.json();
+        const { result: data } = await res.json();
+        if (!data) return;
         updateHero(data.hero);
         updateBooking(data.booking);
         updateServices(data.services);
