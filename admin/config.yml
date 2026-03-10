@@ -1,0 +1,100 @@
+backend:
+  name: github
+  repo: GITHUB_USERNAME/REPO_NAME   # e.g. alessio/barber
+  branch: main
+  base_url: https://YOUR_SITE.vercel.app  # your vercel deployment URL
+  auth_endpoint: /api/auth
+
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: site
+    label: Sito
+    files:
+      - name: site
+        label: Contenuto Sito
+        file: content/site.json
+        format: json
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Immagine di sfondo, name: backgroundImage, widget: image }
+              - { label: Titolo riga 1, name: titleLine1, widget: string }
+              - { label: Titolo riga 2, name: titleLine2, widget: string }
+              - { label: Titolo riga 3, name: titleLine3, widget: string }
+              - { label: Descrizione, name: description, widget: text }
+
+          - label: Prenotazione
+            name: booking
+            widget: object
+            fields:
+              - { label: Descrizione, name: description, widget: text }
+              - { label: Indirizzo, name: address, widget: text }
+              - { label: Orari, name: hours, widget: list }
+              - { label: Telefono, name: phone, widget: string }
+              - { label: Nota walk-in, name: walkInNotice, widget: text }
+
+          - label: Servizi
+            name: services
+            widget: list
+            fields:
+              - { label: Nome, name: name, widget: string }
+              - { label: Descrizione, name: description, widget: text }
+              - { label: Durata, name: duration, widget: string }
+              - { label: Prezzo, name: price, widget: string }
+
+          - label: La Storia
+            name: story
+            widget: object
+            fields:
+              - { label: Immagine principale, name: mainImage, widget: image }
+              - { label: Immagine secondaria, name: secondaryImage, widget: image }
+              - { label: Immagine accento, name: accentImage, widget: image }
+              - { label: Citazione, name: quote, widget: text }
+              - { label: Paragrafo 1, name: paragraph1, widget: text }
+              - { label: Paragrafo 2, name: paragraph2, widget: text }
+              - { label: Firma, name: signature, widget: string }
+
+          - label: Filosofia
+            name: philosophy
+            widget: object
+            fields:
+              - { label: Citazione, name: quote, widget: text }
+              - { label: Autore, name: author, widget: string }
+
+          - label: Galleria
+            name: gallery
+            widget: list
+            fields:
+              - { label: Immagine, name: image, widget: image }
+              - { label: Etichetta, name: label, widget: string }
+              - { label: Tag (opzionale), name: tag, widget: string, required: false }
+              - label: Dimensione
+                name: size
+                widget: select
+                options:
+                  - { label: Normale, value: normal }
+                  - { label: Grande (quadrato), value: large }
+                  - { label: Alto (verticale), value: tall }
+                  - { label: Largo (orizzontale), value: wide }
+
+          - label: Contatti
+            name: contact
+            widget: object
+            fields:
+              - { label: Immagine di sfondo, name: backgroundImage, widget: image }
+              - { label: Nome locale, name: name, widget: string }
+              - { label: Indirizzo, name: address, widget: string }
+              - { label: Link Google Maps, name: mapsUrl, widget: string }
+
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Tagline, name: tagline, widget: string }
+              - { label: Telefono, name: phone, widget: string }
+              - { label: Email, name: email, widget: string }
+              - { label: Indirizzo, name: address, widget: string }
